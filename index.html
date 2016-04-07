@@ -8,14 +8,60 @@
 </head>
 
 <body>
-<header>
-	<ul>
-		<li><a href="viewMusic.html">View Music</li>
-		<li><a href="addMusic.html">Add Music</li>
-		<li><a href="profile.html">Profile</li>
-	</ul>
-</header>
-
+<div id="navBar">
+	<header id="navHeader">
+		<ul id="navUl">
+			<li class="navItems"><a href="viewMusic.html">View Music</a></li>
+			<li class="navItems"><a href="addMusic.html">Add Music</a></li>
+			<li class="navItems"><a href="profile.html">Profile</a></li>
+		</ul>
+	</header>
+</div>
+<div id="leftInputBox">
+  <form>
+  Song Length
+     <input type="range" min="0" max="10" step="1">
+  </form>
+</div>
+<div class="dropdown" id="artistDropdown">
+  <div id="artistTxt">
+    Artist
+  </div>
+  <select name="Artist">
+  <option value="" style="display:none;"></option>
+    <option value="artist1">Artist1</option>
+    <option value="artist2">Artist2</option>
+    <option value="artist3">Artist3</option>
+    <option value="artist4">Artist4</option>
+    <option value="artist5">Artist5</option>
+  </select>
+</div>
+<div class="dropdown" id="albumDropdown">
+  <div id="albumTxt">
+    Album
+  </div>
+  <select name="Album">
+  <option value="" style="display:none;"></option>
+    <option value="album1">Album1</option>
+    <option value="album2">Album2</option>
+    <option value="album3">Album3</option>
+    <option value="album4">Album4</option>
+    <option value="album5">Album5</option>
+  </select>
+</div>
+<div class="checkboxMenu" id="genreCheckboxDiv">
+  <form>
+      <input type="checkbox" name="genreOptions" value="rock">Rock.
+      <input type="checkbox" name="genreOptions" value="pop">Pop.
+      <input type="checkbox" name="genreOptions" value="blues">Blues.
+      <input type="checkbox" name="genreOptions" value="classical">Classical.
+      <input type="checkbox" name="genreOptions" value="jazz">Jazz.
+      <input type="checkbox" name="genreOptions" value="hipHop">Hip Hop.
+  </form>
+</div>
+<div class="button" id="filterButton">
+  <button type="button"><a href="">Filter</a></button>
+</div>
 
 </body>
 </html>
