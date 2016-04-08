@@ -17,15 +17,16 @@
 		</ul>
 	</header>
 </div>
-<div id="leftInputBox">
-  <form>
-  Song Length
-     <input type="range" min="0" max="10" step="1">
+<div id="leftInputBox"> <!--left input box div-->
+<div id="songLengthFormDiv">
+  <form id="songLengthForm">
+  <p>Song Length</p>
+     <div id="songLenthSlider"><input type="range" min="0" max="10" step="1"></div>
   </form>
 </div>
-<div class="dropdown" id="artistDropdown">
+<div class="dropdown" id="artistDropdown"> <!--drop down menu for artist div -->
   <div id="artistTxt">
-    Artist
+    <p>Artist</p>
   </div>
   <select name="Artist">
   <option value="" style="display:none;"></option>
@@ -35,10 +36,10 @@
     <option value="artist4">Artist4</option>
     <option value="artist5">Artist5</option>
   </select>
-</div>
-<div class="dropdown" id="albumDropdown">
+</div> <!--drop down menu for artist div -->
+<div class="dropdown" id="albumDropdown"> <!--drop down menu for album div -->
   <div id="albumTxt">
-    Album
+    <p>Album</p>
   </div>
   <select name="Album">
   <option value="" style="display:none;"></option>
@@ -48,21 +49,26 @@
     <option value="album4">Album4</option>
     <option value="album5">Album5</option>
   </select>
-</div>
+</div> <!--drop down menu for album div close-->
 <div class="checkboxMenu" id="genreCheckboxDiv">
-  <form>
-      <input type="checkbox" name="genreOptions" value="rock">Rock.
-      <input type="checkbox" name="genreOptions" value="pop">Pop.
-      <input type="checkbox" name="genreOptions" value="blues">Blues.
-      <input type="checkbox" name="genreOptions" value="classical">Classical.
-      <input type="checkbox" name="genreOptions" value="jazz">Jazz.
-      <input type="checkbox" name="genreOptions" value="hipHop">Hip Hop.
-  </form>
+  <form> <!-- Genre Check boxes div-->
+    <div id="left3GenreChecks"> <!-- left3GenreChecks div-->
+        <div><input type="checkbox" name="genreOptions" value="rock">Rock.</div>
+        <div><input type="checkbox" name="genreOptions" value="pop">Pop.</div>
+        <div><input type="checkbox" name="genreOptions" value="blues">Blues.</div>
+    </div> <!-- left3GenreChecks div close-->
+    <div id="right3GenreChecks"> <!-- right3GenreChecks div-->
+        <div><input type="checkbox" name="genreOptions" value="classical">Classical.</div>
+        <div><input type="checkbox" name="genreOptions" value="jazz">Jazz.</div>
+        <div><input type="checkbox" name="genreOptions" value="hipHop">Hip Hop.</div>
+    </div><!-- right3GenreChecks div close-->
+  </form> <!-- Genre Check boxes div close-->
 </div>
-<div class="button" id="filterButton">
-  <button type="button"><a href="">Filter</a></button>
+<div class="button">
+  <div id="filterButton"><button type="button"><a href="">Filter</a></button></div>
 </div>
-<div class="mainContentBox">
+</div> <!-- left input box div end-->
+<div class="mainContentBox"> <!-- main content box div-->
   <div>
     <header class="mainContentDivHeader">
     <h1>Song Name</h1>
@@ -104,6 +110,6 @@
     </ul>
   </div>
 
-</div>
+</div><!-- main content box div close -->
 </body>
 </html>
